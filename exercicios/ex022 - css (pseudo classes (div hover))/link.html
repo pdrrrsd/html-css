@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*  SELETORES PERSONALIZADOS
+
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > - children
+        */
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color:blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited{
+            color: purple;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color:yellow ;
+        }
+
+        .especial{
+            background-color: darkgrey;
+            color: white;
+        }
+
+        .especial::before{
+            content: '⇒ ';
+        }
+        .especial::after{
+            content:' ⇐';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ol>
+        <li><a href="https://www.chess.com/play/online" target="_blank">Xadrez online</a></li>
+        <li><a href="https://www.youtube.com/playlist?list=PL5MA3dc53Xt_P_behjtwwPZ_kMvlqDlFv" target="_blank" class="especial">Playlist chill</a></li>
+        <li><a href="https://www.youtube.com/watch?v=4nvewes8Inc&list=LL&index=1&t=3172s" target="_blank">Dj new york tinzo</a></li>
+    </ol>
+</body>
+</html>
